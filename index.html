@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GM Studio</title>
+<title>GM Studio — Branding for small businesses</title>
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -163,14 +163,41 @@
 
   /* CONTACT */
   .contact-line{font-size:19px; line-height:1.6; max-width:44ch; margin:0 0 36px;}
-  .email-btn{
-    display:inline-block; font-family:'JetBrains Mono', monospace; font-size:15px;
-    padding:16px 22px; background:var(--purple); color:#100a1f; text-decoration:none; border-radius:4px; font-weight:600;
-  }
-  .email-btn:hover{background:var(--purple-glow);}
-
-  footer{padding:36px 0 64px; font-size:13px; color:var(--dim); display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px; align-items:center;}
+  
   footer .brand svg{width:22px; height:22px;}
+
+  /* CONTACT - purple buttons side by side */
+  .contact-line{font-size:15px; color:var(--dim); margin:0 0 22px; max-width:50ch;}
+  .contact-actions{display:flex; gap:12px; flex-wrap:wrap; align-items:center;}
+  .email-btn{
+    display:inline-flex; align-items:center; gap:8px;
+    padding:14px 22px; border-radius:4px; text-decoration:none;
+    background:var(--purple); color:#100a1f; font-weight:600; font-size:15px;
+    border:1px solid var(--purple); transition:all .2s;
+  }
+  .email-btn:hover{background:var(--purple-glow); border-color:var(--purple-glow); transform:translateY(-1px);}
+  .social-btn{
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    padding:14px 20px; border-radius:4px; text-decoration:none;
+    background:var(--purple); color:#100a1f; font-weight:600; font-size:14px;
+    border:1px solid var(--purple); transition:all .2s;
+  }
+  .social-btn:hover{background:var(--purple-glow); border-color:var(--purple-glow); transform:translateY(-1px);}
+  .social-btn svg{width:18px; height:18px; flex-shrink:0;}
+
+  /* FOOTER centered */
+  footer{
+    display:flex; flex-direction:column; align-items:center; text-align:center;
+    gap:20px; padding:48px 0 56px; border-top:1px solid var(--line); margin-top:24px;
+  }
+  .footer-stack{display:flex; flex-direction:column; align-items:center; gap:12px; width:100%;}
+  .footer-based{font-size:13.5px; color:var(--dim); text-align:center;}
+  .footer-production{
+    margin-top:12px; font-family:'JetBrains Mono', monospace; font-size:11.5px;
+    color:var(--dim); line-height:1.6; opacity:0.75; text-align:center;
+    display:flex; flex-direction:column; align-items:center; gap:2px;
+  }
+
 </style>
 </head>
 <body>
@@ -523,21 +550,35 @@
 
   <svg class="wave-divider" viewBox="0 0 960 34" preserveAspectRatio="none"><path d="M0,17 C240,0 480,34 720,17 C840,8 900,24 960,17"/></svg>
 
-  <section id="contact">
+    <section id="contact">
     <div class="sec-head">
       <h2>Let's talk</h2>
     </div>
     <p class="contact-line">Tell me a bit about your business and what you're looking for. I usually reply within a day.</p>
-    <a class="email-btn" href="mailto:hey.gmstudio@gmail.com">hey.gmstudio@gmail.com</a>
+    <div class="contact-actions">
+      <a class="email-btn" href="mailto:hey.gmstudio@gmail.com">hey.gmstudio@gmail.com</a>
+      <a class="social-btn" href="https://www.instagram.com/heygmstudio" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+      <a class="social-btn" href="https://www.facebook.com/heygmstudio" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        Facebook
+      </a>
+    </div>
   </section>
 
-  <footer>
+    <footer>
     <div class="brand">
       <img class="footer-logo" src="logo.png" alt="GM Studio logo" />
     </div>
-    <div>Based remotely, working with US small businesses</div>
-    
-    <div>a Gabriel Moura production</div>
+    <div class="footer-stack">
+      <div class="footer-based">Based in South Brazil, working remotely with US small businesses</div>
+      <div class="footer-production">
+        <div class="prod-line">a Gabriel Moura production</div>
+        <div class="prod-copy">GM Studio © 2026</div>
+      </div>
+    </div>
   </footer>
 
 </div>
