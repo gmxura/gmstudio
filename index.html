@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GM Studio — Branding for small businesses</title>
+<title>GM Studio — Graphic design for growing small businesses</title>
+<meta name="description" content="GM Studio creates logos, social media kits and brand identities for growing boutiques, cafés and food businesses in the United States.">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -97,6 +98,7 @@
   .plan{ border-top:1px solid var(--line); padding:30px 0; }
   .plan:last-of-type{border-bottom:1px solid var(--line);}
   .plan-name{font-family:'Fraunces', serif; font-size:21px; margin-bottom:8px;}
+  .plan-price{font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--purple-glow); margin-bottom:12px;}
   .plan-desc{font-size:15px; color:var(--dim); max-width:60ch;}
   .plan-time{font-size:13px; color:var(--dim); margin-top:8px;}
   .services-cta{
@@ -198,6 +200,23 @@
     display:flex; flex-direction:column; align-items:center; gap:2px;
   }
 
+  .hero-kicker{font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--purple-glow); margin-bottom:18px;}
+  .hero-actions{display:flex; align-items:center; justify-content:center; gap:22px; flex-wrap:wrap;}
+  .hero-cta{display:inline-block; padding:15px 22px; border-radius:4px; background:var(--purple); color:#100a1f; text-decoration:none; font-weight:600;}
+  .hero-cta:hover{background:var(--purple-glow);}
+  .hero-link{color:var(--white); text-decoration:none; border-bottom:1px solid var(--purple); padding-bottom:3px;}
+  .hero-link:hover{color:var(--purple-glow);}
+  .launch-offer{margin-top:28px; padding:16px 18px; border:1px solid rgba(167,139,250,.35); background:rgba(139,92,246,.08); border-radius:6px; color:var(--dim); font-size:14px; line-height:1.6; max-width:720px;}
+  .launch-offer strong{color:var(--white);}
+  .service-footnote{font-size:13px; color:var(--dim); margin-top:26px;}
+  .concept-note{width:100%; margin:-24px 0 24px; padding:14px 16px; border-left:2px solid var(--purple); background:rgba(139,92,246,.08); color:var(--dim); font-size:13.5px; line-height:1.6;}
+  .concept-note strong{color:var(--white);}
+  .contact-card{border:1px solid var(--line); background:var(--panel); border-radius:6px; padding:18px 20px; margin:0 0 24px; max-width:720px;}
+  .contact-card-title{font-size:13px; color:var(--white); margin-bottom:12px;}
+  .contact-chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .contact-chips span{font-size:12px; color:var(--dim); border:1px solid var(--line); border-radius:999px; padding:6px 10px;}
+  @media (max-width:560px){ .hero-actions{align-items:stretch; flex-direction:column; gap:14px; width:100%;} .hero-cta{text-align:center;} .hero-link{text-align:center;} }
+
 </style>
 </head>
 <body>
@@ -212,7 +231,7 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </div>
-    <a class="nav-cta" href="#contact">Start a project</a>
+    <a class="nav-cta" href="#contact">Get a design recommendation</a>
   </div>
 </nav>
 
@@ -223,8 +242,10 @@
     <div class="hero-inner">
       <img class="hero-logo" src="logo.png" alt="GM Studio logo" />
       <div class="status"><span class="dot"></span>Currently taking on new clients</div>
-      <h1>Branding for small businesses that don't have time to think about branding.</h1>
-      <p class="hero-sub">I'm Gabriel, and I run GM Studio — logos, social kits, and full brand identities, built fast and priced for businesses that are still finding their feet.</p>
+      <div class="hero-kicker">Graphic design for growing boutiques, cafés and food businesses</div>
+      <h1>Look professional, stay consistent, and keep growing.</h1>
+      <p class="hero-sub">I'm Gabriel, and I run GM Studio — creating logos, social media kits and brand identities with a clear process, fast turnaround and remote support for U.S. small businesses.</p>
+      <div class="hero-actions"><a class="hero-cta" href="#contact">Get a free design recommendation</a><a class="hero-link" href="#work">See concept work ↓</a></div>
     </div>
     <svg class="hero-wave" viewBox="0 0 960 60" preserveAspectRatio="none">
       <path class="w2" d="M0,40 C160,10 320,55 480,30 C640,5 800,45 960,20" />
@@ -235,28 +256,33 @@
   <section id="services">
     <div class="sec-head">
       <h2>Services</h2>
-      <div class="sec-note">Pick a starting point, or we scope something custom together.</div>
+      <div class="sec-note">Clear packages for growing businesses. Custom scopes are welcome.</div>
     </div>
 
     <div class="plan">
       <div class="plan-name">Starter Brand</div>
-      <div class="plan-desc">A logo with up to 3 rounds of revisions, a color palette, and export files in PNG, JPG, PDF, and vector.</div>
+      <div class="plan-price">Starting at $200</div>
+      <div class="plan-desc">For businesses that need a professional visual foundation: custom logo, color palette, basic typography direction, and export files in PNG, JPG, PDF, and vector.</div>
       <div class="plan-time">5–7 business days</div>
     </div>
 
     <div class="plan">
       <div class="plan-name">Social Boost</div>
-      <div class="plan-desc">Everything in Starter, plus 15 social media templates and 2 profile banners for Instagram and Facebook.</div>
+      <div class="plan-price">Starting at $375</div>
+      <div class="plan-desc">For businesses that need consistent content every week: everything in Starter, plus 15 branded social media templates and 2 profile or cover banners.</div>
       <div class="plan-time">5–7 business days</div>
     </div>
 
     <div class="plan">
       <div class="plan-name">Business Identity</div>
-      <div class="plan-desc">Everything in Social Boost, plus business cards, a flyer or digital menu, AI-assisted product mockups, and a month of support for small tweaks.</div>
+      <div class="plan-price">Starting at $650</div>
+      <div class="plan-desc">For a launch or refresh: everything in Social Boost, plus business cards, a flyer or digital menu, professional product mockups, and one month of minor support.</div>
       <div class="plan-time">7–10 business days</div>
     </div>
 
-    <a class="services-cta" href="#contact">Get in touch to book a project</a>
+    <div class="launch-offer"><strong>Introductory offer:</strong> Small Business Social Starter — <strong>$275</strong>. Includes 6 Instagram posts, 6 stories, 3 reusable templates and one revision round. Available for a limited number of new client projects.</div>
+    <div class="service-footnote">Prices are starting points. Final quotes are based on scope, timeline and deliverables.</div>
+    <a class="services-cta" href="#contact">Get a custom design plan</a>
   </section>
 
   <svg class="wave-divider" viewBox="0 0 960 34" preserveAspectRatio="none"><path d="M0,17 C240,34 480,0 720,17 C840,25 900,10 960,17"/></svg>
@@ -264,8 +290,9 @@
   <section id="work">
     <div class="sec-head">
       <h2>Work</h2>
-      <div class="sec-note">Scroll to see each concept in full — logo, business card, and social post.</div>
+      <div class="sec-note">Selected concept work showing possible directions for small-business brands.</div>
     </div>
+    <div class="concept-note"><strong>Portfolio note:</strong> Every project below is a concept created to demonstrate a possible brand direction. These are not client testimonials or completed client projects.</div>
 
     <div class="work-scroll">
 
@@ -274,7 +301,7 @@
         <div class="case-top">
           <div>
             <div class="case-name">Velora</div>
-            <div class="case-tag">Fashion e-commerce — minimalist</div>
+            <div class="case-tag">Concept project · Fashion e-commerce — minimalist</div>
           </div>
         </div>
         <div class="tiles">
@@ -292,9 +319,9 @@
             <div class="card-mock" style="background:#f4f2ee; color:#1c1a17;">
               <svg width="26" height="26" viewBox="0 0 150 150"><circle cx="75" cy="58" r="42" fill="none" stroke="#1c1a17" stroke-width="2"/><path d="M55 42 L75 74 L95 42" fill="none" stroke="#1c1a17" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="70" y="30" width="10" height="10" fill="#b9a88f" transform="rotate(45 75 35)"/></svg>
               <div>
-                <div class="cname">Renata Cardoso</div>
-                <div class="crole">Founder, Velora</div>
-                <div class="ccontact">hello@velora.com &nbsp;·&nbsp; velora.com</div>
+                <div class="cname">Brand direction</div>
+                <div class="crole">Concept project</div>
+                <div class="ccontact">No client contact</div>
               </div>
             </div>
             <div class="tile-label">Business card</div>
@@ -328,7 +355,7 @@
         <div class="case-top">
           <div>
             <div class="case-name">Nexbyte</div>
-            <div class="case-tag">Tech e-commerce — modern</div>
+            <div class="case-tag">Concept project · Tech e-commerce — modern</div>
           </div>
         </div>
         <div class="tiles">
@@ -347,9 +374,9 @@
             <div class="card-mock" style="background:#12172b; color:#f2f0ec;">
               <svg width="24" height="24" viewBox="0 0 150 150"><polygon points="62,36 80,46 80,66 62,76 44,66 44,46" fill="#5b86ff"/><polygon points="84,36 102,46 102,66 84,76 66,66 66,46" fill="#5b86ff" opacity="0.55"/><circle cx="93" cy="51" r="3" fill="#12172b"/></svg>
               <div>
-                <div class="cname">Diego Alves</div>
-                <div class="crole" style="opacity:0.65;">Sales, Nexbyte</div>
-                <div class="ccontact" style="opacity:0.55;">hi@nexbyte.com &nbsp;·&nbsp; nexbyte.com</div>
+                <div class="cname">Brand direction</div>
+                <div class="crole" style="opacity:0.65;">Concept project</div>
+                <div class="ccontact" style="opacity:0.55;">No client contact</div>
               </div>
             </div>
             <div class="tile-label">Business card</div>
@@ -383,7 +410,7 @@
         <div class="case-top">
           <div>
             <div class="case-name">Smoke &amp; Co</div>
-            <div class="case-tag">Food truck — bold and playful</div>
+            <div class="case-tag">Concept project · Food truck — bold and playful</div>
           </div>
         </div>
         <div class="tiles">
@@ -401,9 +428,9 @@
             <div class="card-mock" style="background:#241a16; color:#fbe9df;">
               <svg width="26" height="26" viewBox="0 0 150 150"><circle cx="75" cy="70" r="48" fill="#e2643f"/><path d="M52 48 Q60 32 74 40 Q82 24 96 38 Q108 32 112 48" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/></svg>
               <div>
-                <div class="cname">Bruno Terra</div>
-                <div class="crole" style="opacity:0.7;">Pitmaster, Smoke &amp; Co</div>
-                <div class="ccontact" style="opacity:0.6;">@smokeandco &nbsp;·&nbsp; on the road</div>
+                <div class="cname">Brand direction</div>
+                <div class="crole" style="opacity:0.7;">Concept project</div>
+                <div class="ccontact" style="opacity:0.6;">No client contact</div>
               </div>
             </div>
             <div class="tile-label">Business card</div>
@@ -437,7 +464,7 @@
         <div class="case-top">
           <div>
             <div class="case-name">Amora Café</div>
-            <div class="case-tag">Restaurant / café — elegant</div>
+            <div class="case-tag">Concept project · Restaurant / café — elegant</div>
           </div>
         </div>
         <div class="tiles">
@@ -458,9 +485,9 @@
             <div class="card-mock" style="background:#f3ede6; color:#3d2e22;">
               <svg width="28" height="20" viewBox="0 0 150 100"><path d="M58 40 Q75 22 92 40" fill="none" stroke="#3d2e22" stroke-width="1.6"/><ellipse cx="64" cy="38" rx="6" ry="10" fill="#3d2e22" transform="rotate(-30 64 38)"/><ellipse cx="86" cy="38" rx="6" ry="10" fill="#3d2e22" transform="rotate(30 86 38)"/></svg>
               <div>
-                <div class="cname" style="font-family:'Fraunces', serif;">Marina Duque</div>
-                <div class="crole">Chef &amp; owner, Amora Café</div>
-                <div class="ccontact">hello@amoracafe.com</div>
+                <div class="cname" style="font-family:'Fraunces', serif;">Brand direction</div>
+                <div class="crole">Concept project</div>
+                <div class="ccontact">No client contact</div>
               </div>
             </div>
             <div class="tile-label">Business card</div>
@@ -494,7 +521,7 @@
         <div class="case-top">
           <div>
             <div class="case-name">Cornerstone Realty</div>
-            <div class="case-tag">Services / real estate — professional</div>
+            <div class="case-tag">Concept project · Services / real estate — professional</div>
           </div>
         </div>
         <div class="tiles">
@@ -514,9 +541,9 @@
             <div class="card-mock" style="background:#f6f5f2; color:#2b2a27;">
               <svg width="24" height="22" viewBox="0 0 150 110"><polygon points="75,38 108,62 42,62" fill="#2b2a27"/><rect x="52" y="62" width="46" height="28" fill="#2b2a27"/><rect x="68" y="72" width="14" height="18" fill="#f6f5f2"/></svg>
               <div>
-                <div class="cname">Fernanda Reis</div>
-                <div class="crole">Broker, Cornerstone Realty</div>
-                <div class="ccontact">fernanda@cornerstone.com</div>
+                <div class="cname">Brand direction</div>
+                <div class="crole">Concept project</div>
+                <div class="ccontact">No client contact</div>
               </div>
             </div>
             <div class="tile-label">Business card</div>
@@ -554,9 +581,13 @@
     <div class="sec-head">
       <h2>Let's talk</h2>
     </div>
-    <p class="contact-line">Tell me a bit about your business and what you're looking for. I usually reply within a day.</p>
+    <p class="contact-line">Tell me what your business needs and I'll reply within one business day with the best next step. Communication is in English, and projects are handled remotely from South Brazil.</p>
+    <div class="contact-card">
+      <div class="contact-card-title">To get a useful first reply, include:</div>
+      <div class="contact-chips"><span>Business type</span><span>What you need designed</span><span>Desired timeline</span><span>Reference links</span></div>
+    </div>
     <div class="contact-actions">
-      <a class="email-btn" href="mailto:hey.gmstudio@gmail.com">hey.gmstudio@gmail.com</a>
+      <a class="email-btn" href="mailto:hey.gmstudio@gmail.com?subject=GM%20Studio%20design%20inquiry&body=Hi%20Gabriel%2C%0A%0ABusiness%20name%3A%0ABusiness%20type%3A%0AWhat%20I%20need%20designed%3A%0ADesired%20timeline%3A%0A%0AThanks!">Request a project estimate</a>
       <a class="social-btn" href="https://www.instagram.com/heygmstudio" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
         Instagram
@@ -573,7 +604,7 @@
       <img class="footer-logo" src="logo.png" alt="GM Studio logo" />
     </div>
     <div class="footer-stack">
-      <div class="footer-based">Based in South Brazil, working remotely with US small businesses</div>
+      <div class="footer-based">Based in South Brazil · Remote support for U.S. small businesses · Communication in English</div>
       <div class="footer-production">
         <div class="prod-line">a Gabriel Moura production</div>
         <div class="prod-copy">GM Studio © 2026</div>
